@@ -47,7 +47,14 @@
             if (_webRequest.isDone)
             {
                 var highscore = JsonUtility.FromJson<HighscoreList>(_webRequest.text);
-                Debug.Log(highscore.Items.Length + ": " + highscore.Items[0].Name + " (" + highscore.Items[0].Points + ")");
+                if (highscore.Items.Length == 0)
+                {
+                    Debug.Log("No Highscore");
+                }
+                else
+                {
+                    Debug.Log(highscore.Items[0].Name + " (" + highscore.Items[0].Points + ") is first of " + highscore.Items.Length + " entries");
+                }
                 _webRequest = null;
             }
         }

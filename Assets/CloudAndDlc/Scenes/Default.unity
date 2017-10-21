@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89c1e360a3a5a743b581e01c6e66c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseUrl: http://localhost:50050/api/
+  BaseUrl: https://cloudanddlc.azurewebsites.net/api/
   Dlc: bar
 --- !u!23 &522636982
 MeshRenderer:
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b610ac135b155594e845c232c73b4e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseUrl: http://localhost:50050/api/
+  BaseUrl: https://cloudanddlc.azurewebsites.net/api/
 --- !u!4 &1864650038
 Transform:
   m_ObjectHideFlags: 0
