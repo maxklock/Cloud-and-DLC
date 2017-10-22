@@ -19,8 +19,8 @@ namespace MyGameApi.Controllers
         // GET api/values
         public HttpResponseMessage Get(string name, string resource)
         {
-            var path = System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath + "\\App_Data\\";
-            var filename = name + "_" + resource;
+            var path = System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath + "\\App_Data\\" + name + "\\";
+            var filename = resource;
 
             var result = Request.CreateResponse(HttpStatusCode.OK);
             result.Content = new ByteArrayContent(File.ReadAllBytes(path + filename));

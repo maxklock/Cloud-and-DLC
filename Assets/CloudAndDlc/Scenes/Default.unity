@@ -142,7 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseUrl: https://cloudanddlc.azurewebsites.net/api/
-  Dlc: bar
+  Dlc: office
+  UpdateResources: 0
 --- !u!23 &522636982
 MeshRenderer:
   m_ObjectHideFlags: 0
